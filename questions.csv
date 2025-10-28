@@ -1,0 +1,12 @@
+const FALLBACK_CSV = `question,optionA,optionB,optionC,optionD,answer,feedback
+p5.js 的 setup 什麼時候執行？,每一幀都執行,只在開始執行一次,按滑鼠時,視窗縮放時,B,setup 只在開始呼叫一次，初始化用
+下列何者能在每一幀重繪畫面？,mousePressed,frameRate,draw,createCanvas,C,draw 會每幀自動呼叫
+CSV 在 p5.js 中可用哪個函式讀取？,loadImage,loadSound,loadTable,loadFont,C,讀取表格題庫用 loadTable
+在 p5.js 中改變文字大小要用？,textSize,strokeWeight,textAlign,textLeading,A,textSize 可以設定文字大小
+想要把原點移動到畫面中央要用？,rotate,translate,scale,push,B,translate 可平移座標系
+要畫沒有邊框的圓形該如何設定？,noStroke(),noFill(),stroke(0),strokeWeight(0),A,noStroke() 會取消外框線
+把畫面清成單一底色應該用？,fill,background,clear,erase,B,background 會填滿整個畫布背景
+讓圖形每幀旋轉需要用到哪個變數或函式？,mouseX,frameCount,windowWidth,keyCode,B,frameCount 每幀遞增可用來製作動畫
+使用者按滑鼠時會觸發哪個事件？,mouseMoved,mousePressed,keyPressed,mouseReleased,B,mousePressed 在按下時觸發
+想把草稿變成不會受後續變動影響的獨立層，常用？,push()/pop(),beginShape()/endShape(),save(),createGraphics,A,push/pop 保存與還原繪圖狀態
+想要在畫面大小改變時自動調整畫布，該放哪個函式？,setup,draw,windowResized,preload,C,windowResized 在視窗改變時觸發`;
